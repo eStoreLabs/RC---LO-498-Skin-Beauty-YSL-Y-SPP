@@ -83,7 +83,7 @@ body {
       font-family: $regular;
       margin-bottom: 60px;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 14px;
       text-align: center;
 
       &--uppercase {
@@ -138,8 +138,8 @@ body {
       color: #000;
 
       &--bold {
+        font-size: inherit;
         margin-bottom: 20px;
-        font-size: 20px;
         font-weight: 700;
       }
     }
@@ -180,7 +180,7 @@ body {
         padding: 25px;
         margin-bottom: 30px;
         border: 1px solid #000;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 700;
       }
 
@@ -705,11 +705,14 @@ body {
   @media screen and (min-width: 1300px) {
     .es-category {
       margin-bottom: 70px;
-    }
 
-    .es-category {
       &__item-subtitle {
         min-height: auto;
+      }
+
+      &__text {
+        font-size: 20px;
+        text-align: center;
       }
     }
 
@@ -738,6 +741,12 @@ body {
       }
 
       &__description {
+        font-size: 20px;
+      }
+    }
+
+    .es-banner {
+      &__text {
         font-size: 20px;
       }
     }

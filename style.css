@@ -66,7 +66,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 60px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
 }
 #es-ysl.es-ysl .es-banner__text--uppercase {
@@ -127,8 +127,8 @@ body {
   color: #000;
 }
 #es-ysl.es-ysl .es-banner__description--bold {
+  font-size: inherit;
   margin-bottom: 20px;
-  font-size: 20px;
   font-weight: 700;
 }
 #es-ysl.es-ysl .es-banner__link {
@@ -170,7 +170,7 @@ body {
   padding: 25px;
   margin-bottom: 30px;
   border: 1px solid #000;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
 }
 #es-ysl.es-ysl .es-category__text--bold {
@@ -646,6 +646,10 @@ body {
   #es-ysl.es-ysl .es-category__item-subtitle {
     min-height: auto;
   }
+  #es-ysl.es-ysl .es-category__text {
+    font-size: 20px;
+    text-align: center;
+  }
   #es-ysl.es-ysl .es-video {
     margin-bottom: 60px;
   }
@@ -663,6 +667,9 @@ body {
     font-size: 20px;
   }
   #es-ysl.es-ysl .es-banner__description {
+    font-size: 20px;
+  }
+  #es-ysl.es-ysl .es-banner__text {
     font-size: 20px;
   }
   #es-ysl.es-ysl .es-category__text {
