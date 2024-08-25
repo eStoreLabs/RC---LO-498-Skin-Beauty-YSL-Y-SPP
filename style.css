@@ -54,7 +54,7 @@ body {
   position: relative;
 }
 #es-ysl.es-ysl .es-banner--top {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 #es-ysl.es-ysl .es-banner__text {
   margin: 0;
@@ -627,6 +627,9 @@ body {
   }
 }
 @media screen and (min-width: 860px) {
+  #es-ysl.es-ysl .es-banner--top {
+    padding-top: 100px;
+  }
   #es-ysl.es-ysl .es-title {
     font-size: 44px;
   }

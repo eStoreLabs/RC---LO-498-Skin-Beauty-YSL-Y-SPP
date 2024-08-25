@@ -75,7 +75,7 @@ body {
     position: relative;
 
     &--top {
-      padding-top: 100px;
+      padding-top: 50px;
     }
 
     &__text {
@@ -683,6 +683,12 @@ body {
   }
 
   @media screen and (min-width: 860px) {
+    .es-banner {
+      &--top {
+        padding-top: 100px;
+      }
+    }
+
     .es-title {
       font-size: 44px;
     }
