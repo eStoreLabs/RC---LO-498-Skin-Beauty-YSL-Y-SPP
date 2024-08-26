@@ -593,8 +593,11 @@ body {
   @media screen and (min-width: 600px) {
     .es-category {
       &__items {
-        flex-direction: row;
         gap: 5px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 840px;
+        margin: 0 auto;
         justify-content: center;
         align-items: initial;
       }
@@ -705,6 +708,10 @@ body {
   @media screen and (min-width: 1300px) {
     .es-category {
       margin-bottom: 70px;
+
+      &__items {
+        max-width: none;
+      }
 
       &__item-subtitle {
         min-height: auto;

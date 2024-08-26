@@ -549,8 +549,11 @@ body {
 }
 @media screen and (min-width: 600px) {
   #es-ysl.es-ysl .es-category__items {
-    flex-direction: row;
     gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 840px;
+    margin: 0 auto;
     justify-content: center;
     align-items: initial;
   }
@@ -642,6 +645,9 @@ body {
 @media screen and (min-width: 1300px) {
   #es-ysl.es-ysl .es-category {
     margin-bottom: 70px;
+  }
+  #es-ysl.es-ysl .es-category__items {
+    max-width: none;
   }
   #es-ysl.es-ysl .es-category__item-subtitle {
     min-height: auto;
