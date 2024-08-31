@@ -39,6 +39,7 @@ body {
   background-color: $white;
 
   * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -69,8 +70,13 @@ body {
 
   .es-banner {
     padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
 
@@ -98,9 +104,18 @@ body {
     }
 
     &__inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       padding-left: 10px;
       padding-right: 10px;
@@ -159,6 +174,8 @@ body {
       color: #fff;
       background: $black;
       text-decoration: none;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -190,9 +207,16 @@ body {
     }
 
     &__items {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       gap: 20px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
     }
 
@@ -235,6 +259,8 @@ body {
       color: #fff;
       background: $black;
       text-decoration: none;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -256,6 +282,8 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       cursor: pointer;
     }
@@ -344,7 +372,11 @@ body {
       margin-bottom: 16px;
     }
     &__bg {
+      -webkit-transition: -webkit-transform 0.6s;
+      transition: -webkit-transform 0.6s;
+      -o-transition: transform 0.6s;
       transition: transform 0.6s;
+      transition: transform 0.6s, -webkit-transform 0.6s;
     }
     &__content {
       padding: 16px;
@@ -423,6 +455,8 @@ body {
       padding: 16px 24px;
       margin-bottom: 16px;
       border: 1px solid $black;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
       text-align: center;
       display: block;
@@ -452,6 +486,8 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       cursor: pointer;
     }
@@ -517,12 +553,16 @@ body {
     position: absolute;
     bottom: 15px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     text-align: center;
   }
 
   .slick-dots {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 0 4px;
     padding: 0;
@@ -594,11 +634,19 @@ body {
     .es-category {
       &__items {
         gap: 5px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         max-width: 840px;
         margin: 0 auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: initial;
+        -ms-flex-align: initial;
         align-items: initial;
       }
     }
@@ -624,6 +672,8 @@ body {
           position: absolute;
           top: 50%;
           left: 55%;
+          -webkit-transform: translate(-15%, -50%);
+          -ms-transform: translate(-15%, -50%);
           transform: translate(-15%, -50%);
         }
       }
@@ -649,22 +699,41 @@ body {
       &__container {
         max-width: 1200px;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
         flex-flow: row;
         margin-bottom: 0px;
       }
       &__container:nth-child(odd) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
         flex-flow: row-reverse;
       }
       &__content {
         padding: 28px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
         max-width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
         flex-flow: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
       }
       &__bg {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
       }
       &__img {
@@ -774,11 +843,13 @@ body {
   @-webkit-keyframes slidedown {
     from {
       opacity: 0;
+      -webkit-transform: translateY(-32px);
       transform: translateY(-32px);
     }
 
     to {
       opacity: 1;
+      -webkit-transform: translateY(0);
       transform: translateY(0);
     }
   }
@@ -786,11 +857,13 @@ body {
   @keyframes slidedown {
     from {
       opacity: 0;
+      -webkit-transform: translateY(-32px);
       transform: translateY(-32px);
     }
 
     to {
       opacity: 1;
+      -webkit-transform: translateY(0);
       transform: translateY(0);
     }
   }
@@ -798,11 +871,13 @@ body {
   @-webkit-keyframes slideright {
     from {
       opacity: 0.3;
+      -webkit-transform: translateX(-100px);
       transform: translateX(-100px);
     }
 
     to {
       opacity: 1;
+      -webkit-transform: translateX(0);
       transform: translateX(0);
     }
   }
@@ -810,11 +885,13 @@ body {
   @keyframes slideright {
     from {
       opacity: 0.3;
+      -webkit-transform: translateX(-100px);
       transform: translateX(-100px);
     }
 
     to {
       opacity: 1;
+      -webkit-transform: translateX(0);
       transform: translateX(0);
     }
   }
